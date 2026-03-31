@@ -1,4 +1,7 @@
-import { Trophy, Star, Users, Clock } from "lucide-react";
+import { Star, Users, Clock } from "lucide-react";
+
+const AWARD_IMG =
+  "https://customer-assets.emergentagent.com/job_jovial-wright-4/artifacts/zdtjhasx_Screenshot%202026-01-13%20170439.png";
 
 export default function BestOfBusiness() {
   return (
@@ -26,43 +29,18 @@ export default function BestOfBusiness() {
             </p>
           </div>
 
-          {/* Right Column – Badges + Stats */}
+          {/* Right Column – Award Image + Stats */}
           <div className="animate-fade-in-up delay-200">
-            {/* Badge Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-              {/* Best of Business Badge */}
-              <div
+            {/* Award Image */}
+            <div className="mb-6">
+              <img
+                src={AWARD_IMG}
+                alt="Best of BusinessRate 2025 - Pinoy General Insurance Services - Insurance Broker - Cerritos, California"
                 data-testid="badge-best-of-business"
-                className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#F4C430] to-[#E5A700] p-6 text-center">
-
-                <Trophy className="mx-auto mb-3 text-[#1F2937]" size={40} strokeWidth={1.5} />
-                <p className="text-[#1F2937] font-bold text-lg leading-tight">
-                  Best of Business<br />Rate 2025
-                </p>
-                <div className="flex justify-center gap-1 mt-3">
-                  {[...Array(5)].map((_, i) =>
-                  <Star key={i} size={16} className="fill-[#1F2937] text-[#1F2937]" />
-                  )}
-                </div>
-              </div>
-
-              {/* Google Reviews Badge */}
-              <div
-                data-testid="badge-google-reviews"
-                className="relative overflow-hidden rounded-2xl bg-gray-50 border border-gray-200 p-6 text-center">
-
-                <div className="flex justify-center gap-1 mb-3">
-                  {[...Array(5)].map((_, i) =>
-                  <Star key={i} size={18} className="fill-[#F4C430] text-[#F4C430]" />
-                  )}
-                </div>
-                <p className="text-[#1F2937] font-bold text-lg leading-tight">
-                  5-Star Rated
-                </p>
-                <p className="text-[#6B7280] text-sm mt-1">
-                  Cerritos, CA &mdash; Google Reviews
-                </p>
-              </div>
+                className="w-full max-w-md mx-auto rounded-2xl shadow-lg"
+                loading="lazy"
+                onLoad={(e) => e.target.classList.add("loaded")}
+              />
             </div>
 
             {/* Stats Row */}
