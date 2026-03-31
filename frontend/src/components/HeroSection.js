@@ -1,5 +1,5 @@
-const HERO_BG =
-  "https://images.pexels.com/photos/7734569/pexels-photo-7734569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+const HERO_VIDEO =
+  "https://customer-assets.emergentagent.com/job_jovial-wright-4/artifacts/zq18r7du_watermark_removed_fcc3a0fa-b72c-453b-ae85-0c702902c3c1.mp4";
 
 export default function HeroSection() {
   return (
@@ -9,10 +9,14 @@ export default function HeroSection() {
       className="relative w-full overflow-hidden"
       aria-label="Hero"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${HERO_BG})` }}
+      {/* Background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src={HERO_VIDEO}
+        autoPlay
+        loop
+        muted
+        playsInline
         aria-hidden="true"
       />
       {/* Dark overlay */}
