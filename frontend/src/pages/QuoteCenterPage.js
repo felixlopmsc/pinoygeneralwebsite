@@ -16,7 +16,7 @@ const QUOTE_CARDS = [
     description: "Find coverage options tailored to your vehicle and driving needs.",
     image: "https://images.unsplash.com/photo-1768066522148-2a9d0df56803?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHx3aGl0ZSUyMHNwb3J0cyUyMGNhciUyMGx1eHVyeSUyMG1vZGVybnxlbnwwfHx8fDE3NzUwMDQwNzV8MA&ixlib=rb-4.1.0&q=85",
     alt: "White sports car",
-    link: "#auto-quote",
+    link: "/auto-insurance",
   },
   {
     title: "Renter's",
