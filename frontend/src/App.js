@@ -6,6 +6,7 @@ import BestOfBusiness from "@/components/BestOfBusiness";
 import ServicesSection from "@/components/ServicesSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import ContactSection from "@/components/ContactSection";
+import InsuranceTipsPage from "@/pages/InsuranceTipsPage";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/insurance-tips" element={<InsuranceTipsPage />} />
       </Routes>
     </BrowserRouter>
   );
