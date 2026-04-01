@@ -7,6 +7,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import ContactSection from "@/components/ContactSection";
 import InsuranceTipsPage from "@/pages/InsuranceTipsPage";
+import QuoteCenterPage from "@/pages/QuoteCenterPage";
 
 const HomePage = () => {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/insurance-tips" element={<InsuranceTipsPage />} />
+        <Route path="/quote-center" element={<QuoteCenterPage />} />
       </Routes>
     </BrowserRouter>
   );

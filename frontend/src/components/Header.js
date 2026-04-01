@@ -8,7 +8,7 @@ const LOGO_URL =
 const NAV_LINKS = [
 { label: "Home", href: "/" },
 { label: "Insurance Tips", href: "/insurance-tips" },
-{ label: "Quote Center", href: "/#contact" }];
+{ label: "Quote Center", href: "/quote-center" }];
 
 
 export default function Header() {
