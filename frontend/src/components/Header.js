@@ -115,16 +115,19 @@ export default function Header() {
               </a>
             </nav>
 
-            {/* Mobile Hamburger */}
-            <button
-              data-testid="mobile-menu-toggle"
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors z-[1001]"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
-              aria-expanded={mobileOpen}
-            >
-              {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {/* Mobile Hamburger - only show when menu closed */}
+            {!mobileOpen && (
+              <button
+                data-testid="mobile-menu-toggle"
+                className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                onClick={() => setMobileOpen(true)}
+                aria-label="Open menu"
+                aria-expanded={false}
+              >
+                <Menu size={24} />
+              </button>
+            )}
+            {mobileOpen && <div className="md:hidden w-10" aria-hidden="true" />}
           </div>
         </div>
       </header>
@@ -132,7 +135,7 @@ export default function Header() {
       {/* Full-screen Mobile Nav Overlay */}
       <div
         data-testid="mobile-nav-overlay"
-        className={`fixed inset-0 z-[999] md:hidden transition-all duration-400 ${
+        className={`fixed inset-0 z-[1001] md:hidden transition-all duration-400 ${
           mobileOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
