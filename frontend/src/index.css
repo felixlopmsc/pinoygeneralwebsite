@@ -142,3 +142,8 @@ code {
 .delay-400 { animation-delay: 400ms; }
 .delay-500 { animation-delay: 500ms; }
 .delay-600 { animation-delay: 600ms; }
+
+/* Mobile menu slide transitions */
+.duration-400 {
+  transition-duration: 400ms;
+}
