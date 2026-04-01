@@ -22,14 +22,18 @@ Build a complete WordPress-style homepage for Pinoy General Insurance Services, 
 ## What's Been Implemented (Dec 2025)
 - [x] Complete homepage with all 6 sections
 - [x] Sticky header with logo image, desktop & mobile navigation
-- [x] Hero with background image overlay and CTAs
-- [x] Awards/stats section
+- [x] Hero with video background and CTAs
+- [x] Awards/stats section with actual Best of BusinessRate 2025 plaque image
 - [x] 4-card services grid with stock images
 - [x] Google Reviews testimonials with mountain background
 - [x] Contact section with static form + footer
 - [x] Responsive design (tested at 375px and 1920px)
-- [x] All data-testid attributes for testing
-- [x] 100% test pass rate
+- [x] Montserrat font across entire site
+- [x] Insurance Tips blog archive page (/insurance-tips)
+- [x] Blog API with MongoDB backend (GET /api/posts with pagination)
+- [x] 4 seeded blog posts with images, categories, author, read time
+- [x] Cross-page navigation (Home, Insurance Tips, Quote Center)
+- [x] 100% test pass rate across all iterations
 
 ## Prioritized Backlog
 ### P0 (Next Phase)
